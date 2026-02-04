@@ -17,12 +17,13 @@ OVERVIEW:
 
 
 INCLUDED FILES:
-*DFA.java
-*DFAInterface.java
-*DFAState.java
-*FAInterface.java
-*State.java
-*DFATest.java
+ *DFA.java
+ *DFAInterface.java
+ *DFAState.java
+ *FAInterface.java
+ *State.java
+ *DFATest.java
+ *README.md - readme doc
 
  List the files required for the project with a brief
  explanation of why each is included.
