@@ -2,7 +2,7 @@
 * Project 1: Deterministic Finite Automata
 * Class CS361 001
 * Date 2/4/2026
-* @autor AEagleton, DCunningham
+* @author AEagleton, DCunningham
 **************** 
 
 
@@ -17,13 +17,13 @@ OVERVIEW:
 
 
 INCLUDED FILES:
- *DFA.java
- *DFAInterface.java
- *DFAState.java
- *FAInterface.java
- *State.java
- *DFATest.java
- *README.md - readme doc
+ * DFA.java
+ * DFAInterface.java
+ * DFAState.java
+ * FAInterface.java
+ * State.java
+ * DFATest.java
+ * README.md - readme doc
 
  List the files required for the project with a brief
  explanation of why each is included.
