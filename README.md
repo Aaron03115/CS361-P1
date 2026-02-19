@@ -97,7 +97,14 @@ TESTING:
  Can your program handle bad input? Is your program  idiot-proof? How do you 
  know? What are the known issues / bugs remaining in your program?
 
-
+We used the existing tests as well as a few addition tests for small DFAs to
+make sure the program meets all the requirements. Based on the existing tests,
+tests were run to check instantiating a DFA, checking that its properties are
+the correct expected values, testing the toString, and running similar tests
+after performing a swap. The program should be able to handle bad input as
+functions were made to return false if an invalid input is given. We used
+assertFalse to check such cases. We are not aware of any known issues and bugs
+remaining in the program.
 
 
 DISCUSSION:
@@ -129,6 +136,26 @@ SOURCES:
  communication, 21 January 2026. Discussed how polymorphism allows the return 
  types of methods implemented in a class to be different from the class specified 
  in the interface as long as the <type in implementation> “is-a” <type in interface>.)
+
+
+https://www.geeksforgeeks.org/java/linkedhashmap-class-in-java/
+Used as primary source for understanding how to use a linked hash map
+
+https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html
+Used as an additional source for how to use a linked hash map
+
+https://www.geeksforgeeks.org/java/linkedhashset-in-java-with-examples/
+Used as primary source for understanding how to use a linked hash set
+
+https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html
+Used as primary source for how to use a linked hash set
+
+https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html
+Used to recall syntax for iterators
+
+Google AI overview/gemini for generic questions typed directly into google since it answers them quicker than clicking on links
+
+
 
 ----------------------------------------------------------------------------
 
