@@ -8,7 +8,6 @@
 
 OVERVIEW:
 
-
  Concisely explain what the program does. If this exceeds a couple
  of sentences, you're going too far. The details go in other
  sections.
