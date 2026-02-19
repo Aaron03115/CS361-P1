@@ -91,12 +91,6 @@ PROGRAM DESIGN AND IMPORTANT CONCEPTS:
 
 TESTING:
 
-
- How did you test your program to be sure it works and meets all of the
- requirements? What was the testing strategy? What kinds of tests were run?
- Can your program handle bad input? Is your program  idiot-proof? How do you 
- know? What are the known issues / bugs remaining in your program?
-
 We used the existing tests as well as a few addition tests for small DFAs to
 make sure the program meets all the requirements. Based on the existing tests,
 tests were run to check instantiating a DFA, checking that its properties are
@@ -118,25 +112,7 @@ DISCUSSION:
  that finally "clicked" for you in the process of working on this project?
  
  
-EXTRA CREDIT:
-
-
- If the project had opportunities for extra credit that you attempted,
- be sure to call it out so the grader does not overlook it.
-
-
 SOURCES:
- All sources used outside of lecture notes, slides, and the textbook need to 
- be cited here. If you used websites, used GenAI, asked your dad or your boss 
- or your roommate for help then you must cite those resources. I am not 
- concerned if you use proper APA or MLA or another format as long as you include 
- all relevant information. If it is a person or GenAI that you referenced, be 
- sure to include who you talked to (or which AI you accessed), when you talked 
- to them, and what help they provided (e.g. Student, Awesome. Private 
- communication, 21 January 2026. Discussed how polymorphism allows the return 
- types of methods implemented in a class to be different from the class specified 
- in the interface as long as the <type in implementation> “is-a” <type in interface>.)
-
 
 https://www.geeksforgeeks.org/java/linkedhashmap-class-in-java/
 Used as primary source for understanding how to use a linked hash map
