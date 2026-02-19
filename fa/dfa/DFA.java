@@ -177,9 +177,9 @@ public class DFA implements DFAInterface {
                 if (to != null) {
                     char transitionChar = c;
                     if (c == symb1) {
-                        transitionChar = symb2; [cite: 132, 133, 139]
+                        transitionChar = symb2; 
                     } else if (c == symb2) {
-                        transitionChar = symb1; [cite: 132, 133, 139]
+                        transitionChar = symb1; 
                     }
                     swappedDFA.addTransition(state.getName(), to.getName(), transitionChar);
                 }

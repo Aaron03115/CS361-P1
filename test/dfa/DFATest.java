@@ -425,14 +425,14 @@ private DFA dfa4() {
 	assertTrue(dfa.addTransition("E", "E", '1'));
 	assertTrue(dfa.addTransition("E", "E", '2'));
 
-
 	return dfa;
 }
 
 @Test
 public void test4_1() {
 	DFA dfa = dfa4();	
-	System.out.println("dfa3 instantiation pass");
+	assertNotNull(dfa);
+	System.out.println("dfa4 instantiation pass");
 }
 
 @Test
@@ -470,14 +470,13 @@ public void test4_3() {
 public void test4_4() {
 	DFA dfa = dfa4();
 	DFA dfaSwap = dfa.swap('1', '2');
-	assertFalse(dfa.accepts("e"));
-	assertFalse(dfa.accepts("21112121212"));
-	assertFalse(dfa.accepts("21"));
-	assertFalse(dfa.accepts("1"));
-	assertFalse(dfa.accepts("2121"));
+	assertFalse(dfaSwap.accepts("e"));
+	assertFalse(dfaSwap.accepts("21112121212"));
+	assertFalse(dfaSwap.accepts("21"));
+	assertFalse(dfaSwap.accepts("1"));
+	assertFalse(dfaSwap.accepts("2121"));
 	
 	System.out.println("dfa4 swap accept pass");
-	System.out.println(dfa.toString());
 }
 
 @Test
@@ -500,15 +499,15 @@ public void test4_5() {
 
 @Test
 public void test4_6() {
-	DFA dfa = dfa3();
+	DFA dfa = dfa4();
 	assertNotNull(dfa.getState("A"));
 	assertNull(dfa.getState("K"));
 	assertEquals(dfa.getState("A").getName(),"A");
 	assertTrue(dfa.isStart("A"));
-	assertNotNull(dfa.getState("B"));
-	assertEquals(dfa.getState("B").getName(),"B");
-	assertFalse(dfa.isStart("B"));
-	assertFalse(dfa.isFinal("B"));
+	assertNotNull(dfa.getState("E"));
+	assertEquals(dfa.getState("E").getName(),"E");
+	assertFalse(dfa.isStart("E"));
+	assertFalse(dfa.isFinal("E"));
 	assertEquals(dfa.getSigma(), Set.of('2','1'));
 
 	System.out.println("dfa4 correctness pass");
@@ -538,6 +537,7 @@ private DFA dfa5() {
 @Test
 public void test5_1() {
 	DFA dfa = dfa5();
+	assertNotNull(dfa);
 	System.out.println("dfa5 instantiate pass");
 }
 
@@ -557,7 +557,7 @@ public void test5_2() {
 @Test
 public void test5_3() {
 	DFA dfa = dfa5();
-	DFA dfaSwap = dfa.swap('1', '1');
+	DFA dfaSwap = dfa.swap('1', '2');
 	assertTrue(dfa != dfaSwap);
 	assertTrue(dfa.getState("A") != dfaSwap.getState("A"));
 	assertEquals(dfa.isStart("A"), dfaSwap.isStart("A"));
@@ -578,14 +578,13 @@ public void test5_3() {
 public void test5_4() {
 	DFA dfa = dfa5();
 	DFA dfaSwap = dfa.swap('1', '2');
-	assertTrue(dfa.accepts("e"));
-	assertTrue(dfa.accepts("21112121212"));
-	assertTrue(dfa.accepts("21"));
-	assertTrue(dfa.accepts("1"));
-	assertTrue(dfa.accepts("2121"));
+	assertTrue(dfaSwap.accepts("e"));
+	assertTrue(dfaSwap.accepts("21112121212"));
+	assertTrue(dfaSwap.accepts("21"));
+	assertTrue(dfaSwap.accepts("1"));
+	assertTrue(dfaSwap.accepts("2121"));
 	
 	System.out.println("dfa5 swap accept pass");
-	System.out.println(dfa.toString());
 }
 
 @Test
