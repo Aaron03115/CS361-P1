@@ -8,10 +8,6 @@
 
 OVERVIEW:
 
- Concisely explain what the program does. If this exceeds a couple
- of sentences, you're going too far. The details go in other
- sections.
-
 This program is used by instantiating instances of the DFA class, which
 implements DFAInterface and uses DFAState objects. The program creates
 Determinate Finite Automatas with the instantiation method DFA(). This
@@ -30,16 +26,6 @@ INCLUDED FILES:
  * DFATest.java
  * README.md - readme doc
 
- List the files required for the project with a brief
- explanation of why each is included.
-
- e.g.
- * Class1.java - source file
- * Class2.java - source file
- * README - this file
-
-
-
 
 COMPILING AND RUNNING:
 
@@ -55,28 +41,7 @@ rm fa/*.class
 
 PROGRAM DESIGN AND IMPORTANT CONCEPTS:
 
-
- This is the sort of information someone who really wants to
- understand your program - possibly to make future enhancements -
- would want to know.
-
-
- Explain the main concepts and organization of your program so that
- the reader can understand how your program works. This is not a repeat
- of javadoc comments or an exhaustive listing of all methods, but an
- explanation of the critical algorithms and object interactions that make
- up the program.
-
-
- Explain the main responsibilities of the classes and interfaces that make
- up the program. Explain how the classes work together to achieve the program
- goals. If there are critical algorithms that a user should understand, 
- explain them as well.
- 
- If you were responsible for designing the program's classes and choosing
- how they work together, why did you design the program this way? What, if 
- anything, could be improved? 
-
+This program models a Deterministic Finite Automaton using 2 main classes, DFA and DFAState, to mimic the formal 5-tuple. Following object-oriented principles, the DFA class manages the overall automaton while storing states as DFAState objects rather than strings. To process an input string, the DFA reads exactly 1 character at a time and delegates the transition logic to the current DFAState, which uses a java.util.Map to find the exact pointer to the next state. To meet the strict formatting requirements of the toString() method, the DFA class has a LinkedHashMap and LinkedHashSet to guarantee exactly 100% preservation of the states and symbols order, which would be a problem without using linked versions.
 
 TESTING:
 
