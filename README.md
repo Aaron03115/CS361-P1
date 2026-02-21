@@ -1,4 +1,4 @@
-****************
+﻿****************
 * Project 1: Deterministic Finite Automata
 * Class CS361 001
 * Date 2/4/2026
@@ -12,7 +12,13 @@ OVERVIEW:
  of sentences, you're going too far. The details go in other
  sections.
 
-
+This program is used by instantiating instances of the DFA class, which
+implements DFAInterface and uses DFAState objects. The program creates
+Determinate Finite Automatas with the instantiation method DFA(). This
+can then be built using methods to add characters to the language, add
+states, transitions, and set the start state and final state(s). 
+Existing transitions can be augmented with the swap function. The
+toString() method will print out the 5-tuple for a given DFA object.
 
 
 INCLUDED FILES:
@@ -27,7 +33,6 @@ INCLUDED FILES:
  List the files required for the project with a brief
  explanation of why each is included.
 
-
  e.g.
  * Class1.java - source file
  * Class2.java - source file
@@ -38,31 +43,15 @@ INCLUDED FILES:
 
 COMPILING AND RUNNING:
 
+From the project directory, run the following to compile the program:
+javac fa/dfa/*.java
 
- Give the command for compiling the program, the command
- for running the program, and any usage instructions the
- user needs.
- 
- These are command-line instructions for a system like onyx.
- They have nothing to do with Eclipse or any other IDE. They
- must be specific - assume the user has Java installed, but
- has no idea how to compile or run a Java program from the
- command-line.
- 
- e.g.
- From the directory containing all source files, compile the
- driver class (and all dependencies) with the command:
- $ javac Class1.java
+To use the DFA class, instantiate a DFA object in a new class
+containing a main method.
 
-
- Run the compiled class file with the command:
- $ java Class1
-
-
- Console output will give the results after the program finishes.
-
-
-
+To clean up frmo the project directory, run
+rm fa/dfa/*.class
+rm fa/*.class
 
 PROGRAM DESIGN AND IMPORTANT CONCEPTS:
 
@@ -103,14 +92,17 @@ remaining in the program.
 
 DISCUSSION:
  
- Discuss the issues you encountered during programming (development)
- and testing. What problems did you have? What did you have to research
- and learn on your own? What kinds of errors did you get? How did you 
- fix them?
- 
- What parts of the project did you find challenging? Is there anything
- that finally "clicked" for you in the process of working on this project?
- 
+The main topic that had to be researched for this project was what set
+and map to use, which led to the discovery of the linked hash map and
+linked hash set. Beyond that, the program was written without much issue.
+The other problem encountered was getting JUnit tests to work, which just
+required getting the packages.
+
+The most difficult part of this project was figuring out the logistics
+before beginning, such as selecting what version of set and map to use.
+One thing that clicked is the expected logic here is very similar to
+JFLAP, which gave a good visual representation of how the methods should
+work. 
  
 SOURCES:
 
